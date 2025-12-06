@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">CENTRO UNIVERSITARIO LOS ANGELES</div>
+    <nav class="nav">
+        <ul id="main-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#carreras">Carreras</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="menuToggle" class="menu-btn">☰</button>
+    </nav>
+</header>
+
+<!-- SLIDER PROFESIONAL -->
+<section id="inicio" class="slider-container">
+    <div class="slider" id="slider">
+
+        <div class="slide" style="background-image: url('10.jpeg');">
+            <h1>Bienvenido a CUA</h1>
+            <p>Excelencia académica y formación integral.</p>
+        </div>
+
+        <div class="slide" style="background-image: url('11.jpeg');">
+            <h1>Formando Lideres</h1>
+            <p>Mas de 30 Años.</p>
+        </div>
+
+        <div class="slide" style="background-image: url('12.jpeg');">
+            <h1>Innovación y Tecnología</h1>
+            <p>Laboratorios modernos y herramientas de vanguardia.</p>
+        </div>
+
+    </div>
+
+    <button class="slide-btn" id="prev">❮</button>
+    <button class="slide-btn" id="next">❯</button>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una institución dedicada a la formación académica con valores, innovación y visión internacional.</p>
+
+    <img src="https://0201.nccdn.net/1_2/000/000/195/074/quienes.jpg"
+         class="img-nosotros"
+         alt="Universidad">
+</section>
+
+<!-- CARRERAS -->
+<section id="carreras" class="section">
+    <h2>Nuestras Carreras</h2>
+
+    <div class="carreras-container">
+
+        <div class="carrera-card">
+            <h3>LIA – Licenciatura en Informática Administrativa</h3>
+            <p>
+                Forma profesionistas capaces de integrar la tecnología con la administración,
+                desarrollando sistemas, gestionando información y optimizando procesos empresariales.
+            </p>
+        </div>
+
+        <div class="carrera-card">
+            <h3>Licenciatura en Contabilidad</h3>
+            <p>
+                Prepara expertos en el control financiero, contabilidad fiscal, auditoría
+                y toma de decisiones dentro de empresas públicas y privadas.
+            </p>
+        </div>
+
+        <div class="carrera-card">
+            <h3>Licenciatura en Logística</h3>
+            <p>
+                Capacita profesionales en la planeación, control y optimización del transporte,
+                almacenamiento y distribución de productos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria" class="section">
+    <h2>Galería del Campus</h2>
+
+    <div class="gallery">
+        <img class="gitem" src="1.jpeg">
+        <img class="gitem" src="4.jpeg">
+        <img class="gitem" src="5.jpeg">
+        <img class="gitem" src="6.jpeg">
+        <img class="gitem" src="7.jpeg">
+        <img class="gitem" src="8.jpeg">
+    </div>
+</section>
+
+<!-- PESTAÑAS / TABS -->
+<section id="info" class="section">
+    
+    <h2>Información Académica</h2>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="mision">Misión</button>
+        <button class="tab" data-tab="vision">Visión</button>
+        <button class="tab" data-tab="valores">Valores</button>
+    </div>
+
+    <div class="tab-content active" id="mision">
+        <p>Formar profesionistas competentes con responsabilidad social y espíritu de innovación.</p>
+    </div>
+
+    <div class="tab-content" id="vision">
+        <p>Ser una de las mejores universidades del país, reconocida por su excelencia académica.</p>
+    </div>
+
+    <div class="tab-content" id="valores">
+        <p>Honestidad, respeto, compromiso, responsabilidad y liderazgo.</p>
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section contact">
+    <h2>Contacto</h2>
+
+    <form id="contactForm">
+        <input type="text" id="cname" placeholder="Tu nombre" required>
+        <input type="email" id="cemail" placeholder="Correo electrónico" required>
+        <textarea id="cmsg" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer">
+    © <span id="year"></span> Universidad Profesional — Todos los derechos reservados
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
